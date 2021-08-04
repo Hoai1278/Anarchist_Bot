@@ -25,9 +25,10 @@ async def on_message(message):
     return
   if mention in message.content and not message.content.startswith("?"):
         await message.reply("มีปัญหาหรอไอ้เหี้ย")
-  if message.content.startswith(message.content) and message.author.id != 854008226697314384:
-        DM = str(message.author.name+str(message.author.id)+" wrote DM "+  "'"+message.content+"'")
-        await DMChannel.send(DM)
+  if message.content.startswith(message.content):
+      if message.channel.type == discord.ChannelType.private:
+            DM = str(message.author.name+str(message.author.id)+" wrote DM "+  "'"+message.content+"'")
+            await DMChannel.send(DM)
 
   await client.process_commands(message)
 
