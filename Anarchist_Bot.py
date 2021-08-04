@@ -21,11 +21,11 @@ async def on_ready():
 async def on_message(message):
   global mention
   mention = f'<@!{client.user.id}>'
-  if message.author == client.user or message.author.id == 854008226697314384:
+  if message.author == client.user:
     return
   if mention in message.content and not message.content.startswith("?"):
         await message.reply("มีปัญหาหรอไอ้เหี้ย")
-  if message.content.startswith(message.content):
+  if message.content.startswith(message.content) and message.author.id != 854008226697314384:
         DM = str(message.author.name+str(message.author.id)+" wrote DM "+  "'"+message.content+"'")
         await DMChannel.send(DM)
 
