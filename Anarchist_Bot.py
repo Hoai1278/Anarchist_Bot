@@ -15,5 +15,5 @@ async def on_ready():
     ConsoleChannel = client.get_channel(856882963107282967)
     await ConsoleChannel.send("{0.user} ready to serve mother Anarchy.".format(client))
 
-TOKEN = "HyLkBKa6LeFzW9Bsau7xI6LepxCKnaGg"
-client.run(TOKEN)
+TOKEN1 = "HyLkBKa6LeFzW9Bsau7xI6LepxCKnaGg"
+client.run(TOKEN1)
