@@ -21,7 +21,7 @@ async def on_ready():
 async def on_message(message):
   global mention
   mention = f'<@!{client.user.id}>'
-  if message.author == client.user:
+  if message.author == client.user or message.author.id == 854008226697314384:
     return
   if mention in message.content and not message.content.startswith("?"):
         await message.reply("มีปัญหาหรอไอ้เหี้ย")
