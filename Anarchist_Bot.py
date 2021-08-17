@@ -86,6 +86,6 @@ async def ask(ctx,*,question):
             await ctx.reply(random.choice(ans))
     else:
         await ctx.reply("question must have \"?\"")
-
-TOKEN1 = "ODcyNTE1MDQ3ODQxMjI2NzUy.YQq-9Q.G8ILwUBHW9g7e5ZyC4UwaMzfVRI"
-client.run(TOKEN1)
+def main():
+    TOKEN1 = "ODcyNTE1MDQ3ODQxMjI2NzUy.YQq-9Q.G8ILwUBHW9g7e5ZyC4UwaMzfVRI"
+    client.run(TOKEN1)
