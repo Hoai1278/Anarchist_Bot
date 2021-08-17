@@ -1,1 +1,1 @@
-worker: python Anarchist_Bot.py
+worker: python run_Anarchist_Bot.py
