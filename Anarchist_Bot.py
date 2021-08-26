@@ -86,5 +86,13 @@ async def ask(ctx,*,question):
             await ctx.reply(random.choice(ans))
     else:
         await ctx.reply("question must have \"?\"")
+
+@client.command()
+async def shutdown(ctx):
+  if ctx.author.id == 557878180518821903:
+    await ctx.send("Good bye")
+    await asyncio.sleep(2)
+    quit()
+
 def main(TOKEN):
     client.run(TOKEN)
